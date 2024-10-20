@@ -1,0 +1,15 @@
+# Минимальная версия CMake
+cmake_minimum_required(VERSION 3.10)
+
+# Название проекта
+project(SnifferApp)
+
+# Добавляем исполняемый файл
+add_executable(SnifferApp SnifferApp.cpp)
+
+# Добавляем include директорию для заголовочных файлов
+target_include_directories(SnifferApp PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+
+# Устанавливаем стандарт C++
+set_target_properties(SnifferApp PROPERTIES CXX_STANDARD 17 CXX_STANDARD_REQUIRED YES)
+

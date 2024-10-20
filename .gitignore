@@ -1,25 +1,73 @@
-# Игнорировать папку .vs, которая используется Visual Studio
-.vs/
+# Системные файлы и временные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Игнорировать папку build, содержащую временные файлы сборки
-build/
-
-# Игнорировать исполняемые файлы и объектные файлы
-*.exe
-*.obj
-*.dll
-*.pdb
-*.log
-
-# Игнорировать временные файлы и файлы настроек среды разработки Visual Studio
-*.vcxproj
-*.vcxproj.user
-*.sln
-*.suo
-*.user
-*.idb
-*.ipch
-
-# Игнорировать конфигурационные файлы CMake
-CMakeCache.txt
+# Файлы и папки, созданные CMake
+/build/
 CMakeFiles/
+CMakeCache.txt
+*.cmake
+Makefile
+*.build
+*.dir/
+*.vcxproj*
+*.sln
+compile_commands.json
+
+# Файлы Visual Studio
+*.ncb
+*.sdf
+*.opensdf
+*.suo
+*.vcxproj.user
+*.VC.db
+ipch/
+*.idb
+*.pdb
+*.tlog
+*.log
+*.obj
+*.pch
+*.aps
+*.ilk
+
+# Журнал и временные файлы
+*.log
+*.tmp
+*.temp
+
+# Исполняемые файлы и библиотеки
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.o
+
+# Исключаем отладочные файлы
+*.debug/
+*.bak
+
+# Тестовые выходные данные
+/tests/*.o
+/tests/*.exe
+
+# Исключаем все временные выходные файлы в проекте
+*.out
+*.gch
+*.obj
+
+# Visual Studio Code
+.vscode/
+
+# Скрытые системные файлы
+.idea/
+*.iml
+*.user
+*.ipynb_checkpoints
+
+# Сгенерированные папки в gtest
+/gtest/googletest-main/build/
+/gtest/googletest-main/lib/
