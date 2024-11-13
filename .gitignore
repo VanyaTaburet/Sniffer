@@ -1,0 +1,73 @@
+﻿# ��������� ����� � ��������� �����
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ����� � �����, ��������� CMake
+/build/
+CMakeFiles/
+CMakeCache.txt
+*.cmake
+Makefile
+*.build
+*.dir/
+*.vcxproj*
+*.sln
+compile_commands.json
+
+# ����� Visual Studio
+*.ncb
+*.sdf
+*.opensdf
+*.suo
+*.vcxproj.user
+*.VC.db
+ipch/
+*.idb
+*.pdb
+*.tlog
+*.log
+*.obj
+*.pch
+*.aps
+*.ilk
+
+# ������ � ��������� �����
+*.log
+*.tmp
+*.temp
+
+# ����������� ����� � ����������
+*.exe
+*.dll
+*.so
+*.dylib
+*.lib
+*.a
+*.o
+
+# ��������� ���������� �����
+*.debug/
+*.bak
+
+# �������� �������� ������
+/tests/*.o
+/tests/*.exe
+
+# ��������� ��� ��������� �������� ����� � �������
+*.out
+*.gch
+*.obj
+
+# Visual Studio Code
+.vscode/
+
+# ������� ��������� �����
+.idea/
+*.iml
+*.user
+*.ipynb_checkpoints
+
+# ��������������� ����� � gtest
+/gtest/googletest-main/build/
+/gtest/googletest-main/lib/
